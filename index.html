@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sayı Tahmin Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sayı Tahmini</h1>
+        <p>1 - 100 arası bir sayı tuttum.</p>
+        
+        <input type="number" id="tahminInput" placeholder="Sayıyı yazın...">
+        <br>
+        <button id="tahminButon" onclick="kontrolEt()">Tahmin Et</button>
+        <button id="tekrarButon" onclick="oyunuSifirla()" style="display: none;">Yeniden Başlat</button>
+        
+        <p id="mesaj"></p>
+        
+        <div class="stats">
+            Deneme Sayısı: <span id="deneme">0</span> | Kalan Hak: <span id="hak">7</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
